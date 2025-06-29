@@ -20,7 +20,8 @@ function first() {
       borderRadius: '50px',
       marginTop: '20px',
       backgroundColor: '#f9f9f9',
-    }}>
+      textShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', 
+    }}> 
       <h2>Name: {count}</h2>
       <p>Age: {props.name.age}</p>
       <p>City: {props.name.address.city}</p>

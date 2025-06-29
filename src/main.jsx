@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import Header from './components/Header.jsx'
 import Card from './components/Card.jsx';
 
 const object = [
@@ -60,6 +61,8 @@ const object = [
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Header />
+    
   <div className="card-container">
     {object.map((person, i) => (
       <Card key={i} name={person} allNames={object} />
